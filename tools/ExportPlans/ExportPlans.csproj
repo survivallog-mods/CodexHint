@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ExportPlans</AssemblyName>
+    <RootNamespace>ExportPlans</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SurvivalLog.CodexHint\SurvivalLog.CodexHint.csproj" />
+  </ItemGroup>
+</Project>
