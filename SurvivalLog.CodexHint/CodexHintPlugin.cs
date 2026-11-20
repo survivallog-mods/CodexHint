@@ -16,7 +16,8 @@ namespace SurvivalLog.CodexHint;
 /// 只读不改：不解锁条目、不写存档、不修改游戏文件；General.Enabled=false 停推送停注入
 /// （已渲染面板随图鉴重开清除，遵循 CERail 口径）。
 /// </summary>
-[BepInPlugin("com.local.survivallog.codexhint", "图鉴解锁方案", "0.1.0")]
+public const string Version = "1.0.0";
+[BepInPlugin("com.local.survivallog.codexhint", "图鉴解锁方案", Version)]
 public sealed class CodexHintPlugin : BasePlugin
 {
     internal static ManualLogSource Log;
