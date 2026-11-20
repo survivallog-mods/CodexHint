@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>SurvivalLog.CodexHint.Tests</AssemblyName>
+    <RootNamespace>SurvivalLog.CodexHint.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.6.6" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SurvivalLog.CodexHint\SurvivalLog.CodexHint.csproj" />
+  </ItemGroup>
+
+  <!-- SmokeTest 反射 Plugin 类型需其基类（BasePlugin）可解析；仅 BepInEx core 三件，不含游戏 interop -->
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>E:\SteamLibrary\steamapps\common\Survival Log\BepInEx\core\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>E:\SteamLibrary\steamapps\common\Survival Log\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>E:\SteamLibrary\steamapps\common\Survival Log\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
