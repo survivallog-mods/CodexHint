@@ -1,5 +1,6 @@
 {
   "mcSpec": 2,
+  "suite": true,
   "id": "com.local.survivallog.codexhint",
   "display": "图鉴解锁方案",
   "en": "CodexHint",
